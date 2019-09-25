@@ -1,6 +1,6 @@
 /**
  * MQTT subscriber application that connects                 
- * via  MQTT  and writes data to a MySQL database.
+ * via  MQTT  and forwards data through HTTP API
  * 
  * @author Panos Matsaridis
  */
