@@ -1,6 +1,6 @@
 /**
- * MQTT subscriber application that connects to LoRaWAN LORIOT network server 
- * through an MQTT broker and writes data to a MySQL database.
+ * MQTT subscriber application that connects                 
+ * via  MQTT  and writes data to a MySQL database.
  * 
  * @author Panos Matsaridis
  */
