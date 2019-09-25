@@ -12,12 +12,12 @@ const request = require('request')
  * Create an MQTT connection
  */
 var topic = '/power';
-var brokerUrl = 'tcp://emq.iotech.gr';
+var brokerUrl = 'tcp://broker.cloudmqtt.com';
 var optionsMQTT = {
     clientId: 'sql-node-parser' + Date.now(),
     port: 1883,
-    username: 'power',
-    password: '@power12345',
+    username: 'user',
+    password: 'supersecretpassword',
     keepalive: 60
 };
 
@@ -64,7 +64,7 @@ function mqtt_messsageReceived(topic, message, packet) {
 
     request.post({
         headers: {'Content-Type' : 'application/x-www-form-urlencoded'},
-        url: 'https://live.syntrics.gr/gateway/multiple/',
+        url: 'https://post.mydomain.com/api/v1/getdata',
         body: "data=" + str
     }, (error, res, body) => {
             if (error) {
